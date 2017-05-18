@@ -1,0 +1,21 @@
+<md-slider [value]="_xTrasform" min="0" max="360" step="1" (input)="xTransform = updateSlider($event)"></md-slider>
+<md-slider [value]="_yTrasform" min="0" max="360" step="1" (input)="yTransform = updateSlider($event)"></md-slider>
+<md-slider [value]="_zTrasform" min="0" max="360" step="1" (input)="zTransform = updateSlider($event)"></md-slider>
+<div id="wrap" class="wrap">
+    <div class="cube" [ngStyle]="cubeStyle">
+        <span class="face front">front</span>
+        <span class="face back">back</span>
+        <span class="face top">top</span>
+        <span class="face bottom">bottom</span>
+        <span class="face left">left</span>
+        <span class="face right">right</span>
+    </div>
+    <div class="cube small" [ngStyle]="cubeStyle">
+        <span class="face front">front</span>
+        <span class="face back">back</span>
+        <span class="face top">top</span>
+        <span class="face bottom">bottom</span>
+        <span class="face left">left</span>
+        <span class="face right">right</span>
+    </div>
+</div>

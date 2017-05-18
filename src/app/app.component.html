@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<div class="wrapper">
+    <md-toolbar color="primary">
+        <span>Features</span>
+
+    </md-toolbar>
+    <nav md-tab-nav-bar>
+        <a md-tab-link routerLink="/" color="primary" routerLinkActive #homeActive="routerLinkActive" [active]="homeActive.isActive"
+            [routerLinkActiveOptions]="{exact: true}">
+            <span>Home</span>
+        </a>
+        <a md-tab-link routerLink="/perspective" color="primary" routerLinkActive #perspectiveActive="routerLinkActive" [active]="perspectiveActive.isActive">
+            Perspective
+        </a>
+    </nav>
+
+</div>
+<router-outlet></router-outlet>

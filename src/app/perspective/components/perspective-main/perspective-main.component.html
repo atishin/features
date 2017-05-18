@@ -1,0 +1,12 @@
+<nav md-tab-nav-bar>
+    <a md-tab-link routerLink="/perspective/demo1" routerLinkActive #demo1active="routerLinkActive" [active]="demo1active.isActive">
+        <span>Demo 1</span>
+    </a>
+    <a md-tab-link routerLink="/perspective/demo2" routerLinkActive #demo2active="routerLinkActive" [active]="demo2active.isActive">
+        <span>Demo 2</span>
+    </a>
+    <a md-tab-link routerLink="/perspective/demo3" routerLinkActive #demo3active="routerLinkActive" [active]="demo3active.isActive">
+        <span>Demo 3 (Cube)</span>
+    </a>
+</nav>
+<router-outlet></router-outlet>
