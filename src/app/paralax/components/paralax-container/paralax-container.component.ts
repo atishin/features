@@ -10,7 +10,9 @@ class ParalaxLayer {
   public getStyle() {
     return {
       'background-image': `url('${this.layer.src}')`,
-      'background-position': `${this.position}px`
+      'background-position': `${this.position}px`,
+      'background-size': this.layer.size,
+      'opacity': this.layer.opacity
     };
   }
 }
@@ -47,7 +49,7 @@ export class ParalaxContainerComponent implements OnInit, AfterViewInit {
     });
     setInterval(() => {
       this.layers.forEach(layer => layer.updatePosition());
-    }, 10);
+    }, 1);
   }
 
 }

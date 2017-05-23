@@ -1,0 +1,19 @@
+[app-paralax-text] {
+    width: 50%;
+    margin: auto;
+    height: 50%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 300ms ease;
+    &:hover {
+        opacity: 0;
+    }
+}

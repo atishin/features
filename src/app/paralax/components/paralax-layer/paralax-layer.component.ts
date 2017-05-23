@@ -12,6 +12,12 @@ export class ParalaxLayerComponent implements OnInit {
 
   @Input()
   public speed: number = 1;
+
+  @Input()
+  public size: any = 'cover';
+
+  @Input()
+  public opacity = 1;
   
   constructor() { }
 
