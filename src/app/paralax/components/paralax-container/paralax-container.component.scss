@@ -1,0 +1,13 @@
+.layers-container {
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    //background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}

@@ -10,6 +10,10 @@ const routes: Routes = [
     {
         path: 'perspective',
         loadChildren: 'app/perspective/perspective.module#PerspectiveModule'
+    },
+    {
+        path: 'paralax',
+        loadChildren: 'app/paralax/paralax.module#ParalaxModule'
     }
 ]
 

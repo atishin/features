@@ -1,0 +1,6 @@
+<div class="layers-container" [ngStyle]="{height: height}">
+  <ng-container *ngFor="let layer of layers">
+    <div class="layer" [ngStyle]="layer.getStyle(layer)">
+    </div>
+  </ng-container>
+</div>
